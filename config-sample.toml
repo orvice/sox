@@ -1,0 +1,14 @@
+CachePath = "/var/lib/t2m.db"
+SkipReply = true
+TwitterKey = ""
+TwitterSecretKey = ""
+TwitterToken =  ""
+TwitterTokenSecret  = ""
+TwitterScreenName  = ""
+
+[[Mastodons]]
+Enable  =  true
+Server  = ""
+ClientID  = ""
+ClientSecret = ""
+Token   = ""
