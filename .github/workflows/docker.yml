@@ -27,5 +27,7 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: orvice/twitter2mastodon:latest
+      - name: Build and publish Docker Image to GitHub Packages Registry
+        uses: VaultVulp/gp-docker-action@1.1.7
       - name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
