@@ -1,4 +1,4 @@
-CachePath = "/var/lib/t2m.db"
+CachePath = "/var/lib/t2m_cache"
 SkipReply = true
 TwitterKey = ""
 TwitterSecretKey = ""
