@@ -74,7 +74,17 @@ func checkTweet(ctx context.Context, t twitter.Tweet) {
 	for k, mcli := range mastodons {
 
 		key := tweeID2Key(t.ID, k)
-		if dk.Has(key) {
+		has, err := cache.Has(ctx, key)
+		if err != nil {
+			log.Errorw("check tweet exist  fail",
+				"tweet_id", t.ID,
+				"key", key,
+				contract.ErrorMessage, err.Error(),
+				contract.RequestID, ctxutil.GetRequestIDFromContext(ctx),
+				"media", medias,
+			)
+		}
+		if has {
 			log.Debugw("tweet is already sync to mastodon",
 				"tweet_id", t.ID,
 				"mastodon_id", k,
@@ -134,7 +144,7 @@ func checkTweet(ctx context.Context, t twitter.Tweet) {
 			continue
 		}
 
-		err = dk.Write(key, []byte(s.ID))
+		err = cache.Write(ctx, key, []byte(s.ID))
 		if err != nil {
 			log.Errorw("write key error ",
 				contract.ErrorMessage, err.Error(),

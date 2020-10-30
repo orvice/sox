@@ -1,3 +1,4 @@
+CacheDriver = "file" ## or redis
 CachePath = "/var/lib/t2m_cache"
 SkipReply = true
 TwitterKey = ""
@@ -12,3 +13,9 @@ Server  = ""
 ClientID  = ""
 ClientSecret = ""
 Token   = ""
+
+[[Redis]]
+Host  = "reds"
+Port  = "6379"
+Password = ""
+DB  = 0
