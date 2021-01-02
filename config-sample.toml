@@ -16,6 +16,6 @@ Token   = ""
 
 [[Redis]]
 Host  = "reds"
-Port  = "6379"
+Port  = 6379
 Password = ""
 DB  = 0
