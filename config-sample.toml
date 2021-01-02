@@ -15,7 +15,7 @@ ClientSecret = ""
 Token   = ""
 
 [Redis]
-Host  = "reds"
+Host  = "redis"
 Port  = 6379
 Password = ""
 DB  = 0
