@@ -2,7 +2,7 @@ package biz
 
 import (
 	"github.com/mattn/go-mastodon"
-	"github.com/orvice/twitter2mastodon/internal/config"
+	"github.com/orvice/sox/internal/config"
 )
 
 var (

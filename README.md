@@ -7,5 +7,5 @@ make build
 
 ## Usage
 ```
-./bin/twitter2mastodon -c config.toml
+./bin/sox -c config.toml
 ```

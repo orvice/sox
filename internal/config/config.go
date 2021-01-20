@@ -21,6 +21,7 @@ type Config struct {
 	TwitterTokenSecret string
 	TwitterScreenName  string
 	Mastodons          []Mastodon
+	Output             Output
 }
 
 type Mastodon struct {
@@ -29,6 +30,16 @@ type Mastodon struct {
 	ClientID     string
 	ClientSecret string
 	Token        string
+}
+
+type Output struct {
+	Logstash OutputLogstash
+}
+
+type OutputLogstash struct {
+	Enable bool
+	Addr   string
+	Port   int
 }
 
 var (

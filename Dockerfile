@@ -13,8 +13,8 @@ RUN make build
 
 FROM orvice/go-runtime
 
-ENV PROJECT_NAME twitter2mastodon
-ENV CONFIG_PATH /etc/twitter2mastodon.toml
+ENV PROJECT_NAME sox
+ENV CONFIG_PATH /etc/sox.toml
 
 COPY --from=builder /home/app/bin/${PROJECT_NAME} /app/bin/${PROJECT_NAME}
 

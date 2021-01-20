@@ -3,7 +3,7 @@ package biz
 import (
 	"github.com/dghubble/go-twitter/twitter"
 	"github.com/dghubble/oauth1"
-	"github.com/orvice/twitter2mastodon/internal/config"
+	"github.com/orvice/sox/internal/config"
 )
 
 var (

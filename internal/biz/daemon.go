@@ -5,7 +5,8 @@ import (
 	"fmt"
 	"github.com/dghubble/go-twitter/twitter"
 	"github.com/mattn/go-mastodon"
-	"github.com/orvice/twitter2mastodon/internal/config"
+	"github.com/orvice/sox/internal/config"
+	"github.com/orvice/sox/pkg/storage"
 	"github.com/weeon/contract"
 	"github.com/weeon/log"
 	"github.com/weeon/utils"
@@ -13,6 +14,10 @@ import (
 	"github.com/weeon/utils/task"
 	"net/http"
 	"time"
+)
+
+var(
+	storages []storage.Storage
 )
 
 func Daemon(ctx context.Context) {

@@ -7,8 +7,8 @@ import (
 	"github.com/weeon/utils/process"
 	"os"
 
-	"github.com/orvice/twitter2mastodon/internal/biz"
-	"github.com/orvice/twitter2mastodon/internal/config"
+	"github.com/orvice/sox/internal/biz"
+	"github.com/orvice/sox/internal/config"
 	"github.com/weeon/log"
 	"github.com/weeon/utils"
 )

@@ -1,6 +1,6 @@
 .DEFAULT_GOAL := build
 
-APP_NAME=twitter2mastodon
+APP_NAME=sox
 APP_CMD_DIR=cmd/$(APP_NAME)
 APP_BINARY=bin/$(APP_NAME)
 APP_BINARY_UNIX=bin/$(APP_NAME)_unix_amd64

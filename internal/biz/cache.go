@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/go-redis/redis/v8"
-	"github.com/orvice/twitter2mastodon/internal/config"
+	"github.com/orvice/sox/internal/config"
 	"github.com/peterbourgon/diskv"
 )
 
