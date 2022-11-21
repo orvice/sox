@@ -88,6 +88,7 @@ func checkTweet(ctx context.Context, t twitter.Tweet) {
 				contract.RequestID, ctxutil.GetRequestIDFromContext(ctx),
 				"media", medias,
 			)
+			continue
 		}
 		if has {
 			log.Debugw("tweet is already sync to mastodon",
