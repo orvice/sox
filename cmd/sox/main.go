@@ -4,13 +4,13 @@ import (
 	"context"
 	"flag"
 	"fmt"
-	"github.com/weeon/utils/process"
 	"os"
 
 	"github.com/orvice/sox/internal/biz"
 	"github.com/orvice/sox/internal/config"
 	"github.com/weeon/log"
 	"github.com/weeon/utils"
+	"github.com/weeon/utils/process"
 )
 
 var (

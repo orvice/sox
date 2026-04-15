@@ -42,6 +42,9 @@ type OutputLogstash struct {
 	Port   int
 }
 
+type Storage struct {
+}
+
 var (
 	Conf = new(Config)
 )
